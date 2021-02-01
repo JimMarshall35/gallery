@@ -1,0 +1,205 @@
+{
+	"lvl" : {
+		"skybox" : {
+			"up" : "textures/skyboxes/rainbow_up.png",
+			"down" : "textures/skyboxes/rainbow_dn.png",
+			"front" : "textures/skyboxes/rainbow_ft.png",
+			"back" : "textures/skyboxes/rainbow_bk.png",
+			"left" : "textures/skyboxes/rainbow_lf.png",
+			"right" : "textures/skyboxes/rainbow_rt.png"
+		},
+		"floorplan" : {
+			"tilesize" : 10,
+			"wallheight" : 30,
+			"map" : [
+				"   ____________________*********** ",
+				"   ___***______________*__________ ",
+				"   ________********____*__________ ",
+				"   ______________   ______________ ",
+				"   ____________________*__________ ",
+				"*****_______********************** ",
+				"*_______   _________*_____________*",
+				"*___s___   _________*_____________*", 
+				"*_______   _________*_____________*",
+				"*_____________************_******* ",
+				" *___________*            _        ",
+				"  *_________*             _        ",
+				"  ****___***              _        ",
+				"  __________              _        ",
+				"_________________________________  ",
+				"_________________________________  ",
+				"_________________________________  ",
+				"_________________________________  ",
+				"                                   ",
+				"                                   ",
+				"                                   "
+			]
+		},
+		"shapes" : [
+			{
+				"type" : "sphere",
+				"radius" : 5,
+				"width_segments" : 32,
+				"height_segments" : 32,
+				"material" : {
+					"type" : "lambert",
+					"colour" : "0x00FF99"
+				},
+				"cell" : {"x":3, "z":1},
+				"y" : 6,
+				"rot" : {"x":0,"y":0,"z":15}
+			},
+			{
+				"type" : "torusknot",
+				"radius" : 10,
+				"tube" : 1,
+				"material" : {
+					"type" : "lambert",
+					"colour" : "0x00FFFF"
+				},
+				"cell" : {"x":9, "z":7},
+				"y" : 6,
+				"rot" : {"x":0,"y":0,"z":15}
+			},
+			{
+				"type" : "text",
+				"params" : {
+					"font": "font",
+					"size": 80,
+					"height": 5,
+					"curveSegments": 12,
+					"bevelEnabled": true,
+					"bevelThickness": 10,
+					"bevelSize": 8,
+					"bevelOffset": 0,
+					"bevelSegments": 5
+				},
+				"material" : {
+					"type" : "lambert",
+					"colour" : "0x00FFFF"
+				},
+				"cell" : {"x":9, "z":7},
+				"y" : 6,
+				"rot" : {"x":0,"y":0,"z":15}
+			}
+		],
+		"lights" : [
+			{
+				"type" : "PointLight",
+				"colour" : "0xFFFFFF",
+				"intensity" : 0.5,
+				"distance" : 500,
+				"pos" : {"x":50,"y":50,"z":50}
+			},
+			{
+				"type" : "PointLight",
+				"colour" : "0xFF9900",
+				"intensity" : 0.5,
+				"distance" : 500,
+				"pos" : {"x":100,"y":50,"z":50}
+			},
+			{
+				"type" : "DirectionalLight",
+				"colour" : "0xFFFFFF",
+				"intensity" : 0.5,
+				"pos" : {"x":75,"y":100,"z":40}
+			},
+			{
+				"type" : "DirectionalLight",
+				"colour" : "0xFF00FF",
+				"intensity" : 0.5,
+				"pos" : {"x":75,"y":50,"z":20}
+			}
+		],
+		"paintings" : [
+			
+			{
+				"path" : "textures/a.jpg",
+				"video" : false,
+				"fixedheight" : 10,
+				"cell" : {"x":4,"z":12},
+				"side" : "front"
+			},
+			{
+				"path" : "textures/aphex.jpg",
+				"video" : false,
+				"fixedheight" : 10,
+				"cell" : {"x":10,"z":12},
+				"side" : "front"
+			},
+			{
+				"path" : "textures/bread.jpg",
+				"video" : false,
+				"fixedheight" : 10,
+				"cell" : {"x":9,"z":12},
+				"side" : "left"
+			},
+			{
+				"path" : "textures/cyber.jpg",
+				"video" : false,
+				"fixedheight" : 10,
+				"cell" : {"x":5,"z":12},
+				"side" : "right"
+			},
+			{
+				"id" : "vid",
+				"video" : true,
+				"fixedheight" : 10,
+				"cell" : {"x":7,"z":1},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/flist.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":26,"z":5},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/blair.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":3,"z":5},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/pantera.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":13,"z":5},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/hex_enduction_hour.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":16,"z":9},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/johnson.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":0,"z":7},
+				"side" : "right"
+			},
+			{
+				"path" : "textures/oaps.jpg",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":20,"z":9},
+				"side" : "back"
+			},
+			{
+				"path" : "textures/organ.png",
+				"video" : false,
+				"fixedheight" : 15,
+				"cell" : {"x":20,"z":7},
+				"side" : "right"
+			}
+
+		]
+	}
+	
+	
+}
